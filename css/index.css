@@ -534,7 +534,7 @@ figure:after {
 	left:                   0;
 	right:                  0;
 	content:                "";
-	z-index:                1;
+	z-index:                0.1;
 	background:transparent;
 /*	-webkit-box-shadow: inset 0 0 100000px #111000;*/
 }
