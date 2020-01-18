@@ -23,7 +23,7 @@
  * license document, but changing it is not allowed.
 */
 "use strict";
-const version = "0.0.1";
+const version = "0.0.2";
 const appName = "qcobjects-web";
 const cacheName = `qcobjects-app-${appName}-${version}`;
 const start_url = "/?homescreen=1";
@@ -33,8 +33,6 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([`${start_url}`,
 	"/",
-	".dockerignore",
-	"Dockerfile",
 	"README.md",
 	"app.js",
 	"css/components/card.css",
@@ -89,15 +87,8 @@ self.addEventListener('install', e => {
 	"js/packages/org.quickcorp.custom.tools.js",
 	"js/packages/org.quickcorp.custom.views.js",
 	"js/prism-okaidia.js",
-	"localhost-cert.pem",
-	"localhost-privkey.pem",
-	"manifest.json",
-	"package-lock.json",
-	"package.json",
 	"qcobjects_01.png",
 	"robots.txt",
-	"spec/support/jasmine.json",
-	"spec/testsSpec.js",
 	"templates/components/article1.tpl.html",
 	"templates/components/article2.tpl.html",
 	"templates/components/article3.tpl.html",
