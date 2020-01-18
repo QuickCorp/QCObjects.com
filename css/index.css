@@ -523,14 +523,12 @@ body {
  * CSS 3 Reflection with Box Shadow
  */
 
-
 figure img#demo {
         z-index:0;
         -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
 }
-
 figure:after {
-	position:absolute;
+	position:fixed;
 	top:0;
 	bottom:0;
 	left:                   0;
