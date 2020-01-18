@@ -1,10 +1,10 @@
 {
-  "name": "QCObjects New App",
-  "short_name": "qcobjects_newapp",
+  "name": "QCObjects Website",
+  "short_name": "qcobjects-web",
   "theme_color": "rgb(1,1,1)",
   "background_color": "rgb(1,1,1)",
   "display": "standalone",
-  "description": "Awesome application that will help you achieve your dreams.",
+  "description": "This is the official website of QCObjects",
   "orientation": "portrait-primary",
   "lang": "en-US",
   "dir": "auto",
