@@ -450,6 +450,11 @@ component[name=header]>div>img#demo {
   transform: skew(0deg, -16deg) translateX(-1vw) scaleX(0.75);
 }
 
+component[name=header]>div>img#logo {
+    border: none;
+    box-shadow: none;
+}
+
 nav > button.navbtn {
   background: transparent !important;
   color: #111;
