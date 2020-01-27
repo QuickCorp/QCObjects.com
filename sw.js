@@ -34,6 +34,7 @@ self.addEventListener('install', e => {
       return cache.addAll([`${start_url}`,
 	"/",
 	"README.md",
+  "config.json",
 	"app.js",
 	"css/components/card.css",
 	"css/components/modal.css",

@@ -1,1 +1,29 @@
-{"devmode":"debug"}
+{
+  "devmode": "debug",
+  "lang":"en",
+  "use_i18n":false,
+  "i18n":{
+    "messages":[
+      {
+        "en":"TO CODE FANCY, CLEAN AND QUICK",
+        "es":"CODIGO ELEGANTE, LIMPIO Y RAPIDO"
+      },
+      {
+        "en":"Reference",
+        "es":"Referencia"
+      },
+      {
+        "en":"Table of Contents",
+        "es":"Tabla de Contenidos"
+      },
+      {
+        "en":"Principals",
+        "es":"Principios"
+      },
+      {
+        "en":"Main features",
+        "es":"Características Principales"
+      }
+    ]
+  }
+}

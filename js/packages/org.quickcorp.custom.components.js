@@ -11,11 +11,13 @@ Package('org.quickcorp.custom.components',[
     view:null,
     templateHandler: 'MarkdownTemplateHandler',
     done:function (){
+      var component = this;
       var toc = this.body.innerHTML.match(/<!-- TOC([\s\S]*?)<!-- \/TOC -->/gmi)[0];
       this.body.innerHTML = `<details open="">
         <summary>Reference</summary>
         `+toc+`
       </details>`;
+      component.i18n_translate(); // force execution of i18n translation if available
       this.body.subelements('ul>li>a').map(element=>{
         element.addEventListener('click',function (event){
           global.sideNavController.close();
