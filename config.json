@@ -1,29 +1,65 @@
 {
   "devmode": "debug",
-  "lang":"en",
-  "use_i18n":false,
-  "i18n":{
-    "messages":[
-      {
-        "en":"TO CODE FANCY, CLEAN AND QUICK",
-        "es":"CODIGO ELEGANTE, LIMPIO Y RAPIDO"
-      },
-      {
-        "en":"Reference",
-        "es":"Referencia"
-      },
+  "lang": "en",
+  "use_i18n": true,
+  "i18n": {
+    "messages": [
       {
         "en":"Table of Contents",
-        "es":"Tabla de Contenidos"
+        "es":"Tabla de contenidos"
       },
       {
         "en":"Principals",
         "es":"Principios"
       },
       {
+        "en":"Reference",
+        "es":"Referencia"
+      },
+      {
         "en":"Main features",
         "es":"Características Principales"
+      },
+      {
+        "en":"Adopted Features",
+        "es":"Características Adoptadas"
+      },
+      {
+        "en":"Prevent Render-blocking resources",
+        "es":"Prevenir recursos que bloquean renderizado"
+      },
+
+      {
+        "en":"Check out the official page of ",
+        "es":"Visita el sitio oficial de "
+      },
+      {
+        "en":"Here is the reference documentation of QCObjects",
+        "es":"A continuación la documentación de referencia de QCObjects"
+      },
+      {
+        "en":"This website is dynamically generated using ",
+        "es":"Este website es generado dinámicamente usando "
+      },
+      {
+        "en":"and it is maintained by ",
+        "es":"y es mantenido por "
+      },
+      {
+        "en":"This document is the Main Reference Documentation!",
+        "es":"Este documento es la Documentación Principal de Referencia"
+      },
+      {"en":"Welcome to","es":"Bienvenido a"},
+      {
+        "en":"Here are the principals with QCObjects was made with:",
+        "es":"Estos son los principios con que QCObjects fue concebido:"
+      },
+      {"en":"An open source technology based in JavaScript designed to allow web developers to code targeting desktop and mobile devices into a runtime components and objects scope.",
+        "es":"Una tecnología open source basada en JavaScript diseñada para permitir a los desarrolladores web codificar aplicaciones mobile y desktop en un ambiente de componentes cargados en tiempo de ejecución."},
+      {
+        "en":"QCObjects is being featured by British Herald as today, the most advanced framework for modern software development.",
+        "es":"QCObjects es destacado por British Herald como hoy, el framework más avanzado para desarrollo de software moderno."
       }
-    ]
-  }
+      ]
+    }
 }
