@@ -30,11 +30,10 @@ Package('org.quickcorp.custom.components',[
     name:'nav',
     subcomponents:[]
   }),
-  Class('ReadmeMarkdownComponent',Component,{
+  Class('CustomMarkdownComponent',Component,{
     dependencies:[],
     body:document.createElement('div'),
     name:'readmemarkdowncomponent',
-    templateURI:"https://api.github.com/repos/QuickCorp/QCObjects/contents/README.md?ref=master",
     tplsource:'external',
     cached:true,
     controller:null,
@@ -43,5 +42,18 @@ Package('org.quickcorp.custom.components',[
     done:function (){
       _super_('Component','done').call(this);
     }
+  }),
+  Class('ReadmeMarkdownComponent',CustomMarkdownComponent,{
+    templateURI:"https://api.github.com/repos/QuickCorp/QCObjects/contents/README.md?ref=master"
+  }),
+  Class('AuthorMarkdownComponent',CustomMarkdownComponent,{
+    templateURI:"https://api.github.com/repos/QuickCorp/QCObjects/contents/AUTHOR.md?ref=master"
+  }),
+  Class('ContributingMarkdownComponent',CustomMarkdownComponent,{
+    templateURI:"https://api.github.com/repos/QuickCorp/QCObjects/contents/CONTRIBUTING.md?ref=master"
+  }),
+  Class('CoCMarkdownComponent',CustomMarkdownComponent,{
+    templateURI:"https://api.github.com/repos/QuickCorp/QCObjects/contents/CODE_OF_CONDUCT.md?ref=master"
   })
+
 ]);
