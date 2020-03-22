@@ -1,5 +1,9 @@
 <header>
   <component name="header" controllerClass="HeaderController">
+    <routing path="^#pricing$" name="blank"></routing>
+    <routing path="^#CONTRIBUTING$" name="blank"></routing>
+    <routing path="^#CODE_OF_CONDUCT$" name="blank"></routing>
+    <routing path="^#author$" name="blank"></routing>
     <routing path="#signup" name="blank"></routing>
     <routing path="#signin" name="blank"></routing>
     <routing path="#page1" name="blank"></routing>
@@ -28,7 +32,7 @@
 </aside>
 <main role="main">
   <section>
-    <component name="contentblock">
+    <component name="contentblock" effectClass="MainTransitionEffect">
         <routing path="#page1" name="pages/page1"></routing>
         <routing path="#page2" name="pages/page2"></routing>
         <routing path="#page3" name="pages/page3"></routing>

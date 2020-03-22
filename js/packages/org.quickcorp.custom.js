@@ -1,4 +1,5 @@
 "use script";
+Import('org.quickcorp.custom.effects');
 Import('org.quickcorp.custom.tools');
 Import('org.quickcorp.custom.models');
 Import('org.quickcorp.custom.components');
