@@ -80,47 +80,35 @@ Package('org.quickcorp.i18n_messages.es', [
       "en": "Please fork this project or make a link to this project into your README.md file. Read the LICENSE.txt file before you use this code.",
       "es": "Por favor haz fork a este proyecto y haz un link para este proyecto en tu archivo README.md. Leer el archivo LICENSE.txt antes de usar este código."
     }, {
-      "en": "If you want to become a sponsor for this wonderful project you can do it here",
-      "es": "Si te quieres convertir en sponsor de este maravilloso proyecto puedes hacerlo aquí"
+      "en": "If you want to become a sponsor for this wonderful project you can do it",
+      "es": "Si te quieres convertir en sponsor de este maravilloso proyecto puedes hacerlo"
     }, {
       "en": "You can check out the QCObjects SDK and follow the examples to make your own featured components",
-      "es": "You can check out the QCObjects SDK and follow the examples to make your own featured components"
+      "es": "Puedes revisar QCObjects SDK y seguir los ejemplos para hacer tus propios componentes"
     }, {
-      "en": "If you like this code please DONATE!",
-      "es": "If you like this code please DONATE!"
-    }, {
-      "en": "https://atom.io/packages/qcobjects-syntax",
-      "es": "https://atom.io/packages/qcobjects-syntax"
-    }, {
-      "en": "https://marketplace.visualstudio.com/items?itemName=Quickcorp.QCObjects-vscode",
-      "es": "https://marketplace.visualstudio.com/items?itemName=Quickcorp.QCObjects-vscode"
-    }, {
-      "en": "WARNING: Do this only in a fresh|blank|brandnew installation of Ubuntu 18.x, don't do it into an existing production environment. You will be asked for sudo grant permission.",
-      "es": "WARNING: Do this only in a fresh|blank|brandnew installation of Ubuntu 18.x, don't do it into an existing production environment. You will be asked for sudo grant permission."
-    }, {
-      "en": "WARNING: I'm not responsible for damaging your infrastructure by using an automated installation script into an unsafe network. Make sure all your repos and scripts are under HTTPS with a valid certificate. For better safe results I recommended you to download the script, edit it for your special needs and then execute it in your machine as local.",
-      "es": "WARNING: I'm not responsible for damaging your infrastructure by using an automated installation script into an unsafe network. Make sure all your repos and scripts are under HTTPS with a valid certificate. For better safe results I recommended you to download the script, edit it for your special needs and then execute it in your machine as local."
+      "en": "If you like this code please",
+      "es": "Si te gusta este código por favor"
     }, {
       "en": "Tested on macOS Catalina 10.15.3",
-      "es": "Tested on macOS Catalina 10.15.3"
+      "es": "Probado en macOS Catalina 10.15.3"
     }, {
       "en": "1.- Install the latest version of NodeJS for Windows from here\n2.- From cmd install qcobjects-cli using npm",
       "es": "1.- Install the latest version of NodeJS for Windows from here\n2.- From cmd install qcobjects-cli using npm"
     }, {
       "en": "3.- Create a directory for your project",
-      "es": "3.- Create a directory for your project"
+      "es": "3.- Crear un directorio para tu proyecto"
     }, {
       "en": "4.- Create a new QCObjects Progressive Web Application",
-      "es": "4.- Create a new QCObjects Progressive Web Application"
+      "es": "4.- Crear una nueva App Progresiva QCObjects"
     }, {
       "en": "QCObjects is natively supported by the most famous cloud providers. In most of them, you can install it and set everything up and running in just one step.",
-      "es": "QCObjects is natively supported by the most famous cloud providers. In most of them, you can install it and set everything up and running in just one step."
+      "es": "QCObjects es soportado de forma nativa por los proveedores cloud más famosos. En la mayoría, puedes instalar y configurar todo en un solo paso."
     }, {
       "en": "If you want to forget apt-get and the config guide. Go straight to deploying your project using a preconfigured 1-Click App including QCObjects CLI, QCObjects-SDK and QCObjects HTTP2 Built-In Server, then spin it up on a Droplet VM or a Kubernetes cluster in 60 seconds or less.",
       "es": "If you want to forget apt-get and the config guide. Go straight to deploying your project using a preconfigured 1-Click App including QCObjects CLI, QCObjects-SDK and QCObjects HTTP2 Built-In Server, then spin it up on a Droplet VM or a Kubernetes cluster in 60 seconds or less."
     }, {
-      "en": "Create Your Own QCObjects DigitalOcean Droplet here",
-      "es": "Create Your Own QCObjects DigitalOcean Droplet here"
+      "en": "Create Your Own",
+      "es": "Crea tu propio"
     }, {
       "en": "An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need instances with different configurations.",
       "es": "An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need instances with different configurations."
