@@ -44,6 +44,7 @@ Package('org.quickcorp.custom.components',[
     }
   }),
   Class('ReadmeMarkdownComponent',CustomMarkdownComponent,{
+    name:"readmemarkdowncomponent",
     templateURI:"https://api.github.com/repos/QuickCorp/QCObjects/contents/README.md?ref=master"
   }),
   Class('AuthorMarkdownComponent',CustomMarkdownComponent,{
