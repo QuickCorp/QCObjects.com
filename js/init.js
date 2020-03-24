@@ -29,6 +29,8 @@
 * You can change any value in runtime by using CONFIG.set
 * or changing the static initial value in a config.json file
 */
+//CONFIG.set('use_i18n', true);
+CONFIG.set('i18n_languages',['es']); //only list the languages that are not english
 CONFIG.set('relativeImportPath', 'js/packages/');
 CONFIG.set('componentsBasePath', 'templates/components/');
 CONFIG.set('delayForReady', 1); // delay to wait before executing the first ready event, it includes imports
