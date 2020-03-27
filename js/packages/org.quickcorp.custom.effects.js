@@ -1,7 +1,7 @@
 'use strict';
 Package('org.quickcorp.custom.effects',[
   Class('MainTransitionEffect',TransitionEffect,{
-    duration:385,
+    duration:780,
     defaultParams:{
       alphaFrom:0,
       alphaTo:1
