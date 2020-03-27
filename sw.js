@@ -127,7 +127,12 @@ self.addEventListener('install', e => {
 	"templates/components/signup.tpl.html",
 	"templates/components/signupbuttons.tpl.html",
 	"templates/components/signuppage.tpl.html",
-	"templates/components/snippet.tpl.html"])
+	"templates/components/snippet.tpl.html",
+  "https://api.github.com/repos/QuickCorp/QCObjects/contents/README.md?ref=master",
+  "https://api.github.com/repos/QuickCorp/QCObjects/contents/AUTHOR.md?ref=master",
+  "https://api.github.com/repos/QuickCorp/QCObjects/contents/CONTRIBUTING.md?ref=master",
+  "https://api.github.com/repos/QuickCorp/QCObjects/contents/CODE_OF_CONDUCT.md?ref=master"
+])
           .then(() => self.skipWaiting());
     })
   );
