@@ -43,6 +43,9 @@ CONFIG.set('tplextension','tpl.html'); // this is the file extension to locate t
 CONFIG.set('asynchronousImportsLoad',true); // it is recommended to load the Import declarations in an asyncronous way
 CONFIG.set('serviceWorkerURI','/sw.js'); //QCObjects will register an launch this service worker automatically to work offline
 
+//custom settings
+CONFIG.set('github_buttons_uri','https://buttons.github.io/buttons');
+
 // if Component.cached is true, all the Class('Component') declarations will save the template in a localStorage cache
 // until a cached=false attribute is found in a <component> html declaration
 Component.cached=true;
