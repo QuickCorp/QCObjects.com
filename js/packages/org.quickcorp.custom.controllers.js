@@ -72,6 +72,7 @@ Package('org.quickcorp.custom.controllers', [
       this.component.body.parentElement.subelements('.navbtn')[0].style.display = 'none';
       this.component.body.parentElement.subelements('.closebtn')[0].style.display = 'block';
       this.visibility = true;
+      Tag('#forkme_banner').map(e=>e.style.display='none');
       return this.visibility;
     },
     close: function() {
@@ -83,6 +84,7 @@ Package('org.quickcorp.custom.controllers', [
       this.component.body.parentElement.subelements('.navbtn')[0].style.display = 'block';
       this.component.body.parentElement.subelements('.closebtn')[0].style.display = 'none';
       this.visibility = false;
+      Tag('#forkme_banner').map(e=>e.style.display='block');
       return this.visibility;
     },
     toggle: function() {

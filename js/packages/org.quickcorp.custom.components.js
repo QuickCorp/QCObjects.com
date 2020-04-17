@@ -1,5 +1,17 @@
 'use strict';
+logger.debugEnabled = true;
 Package('org.quickcorp.custom.components',[
+  Class('CardComponent',Component,{
+    name:'card',
+    container:null,
+    body:null,
+    shadowed:true,
+    cached:false,
+    reload:true,
+    controller:null,
+    view:null,
+    data:{}
+  }),
   Class('SideMarkdownComponent',Component,{
     dependencies:[],
     body:document.createElement('div'),
