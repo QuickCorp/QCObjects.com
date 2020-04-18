@@ -9,10 +9,13 @@ Package('org.quickcorp.custom.tools',[
       return template;
     },
     assign:function (data){
-      var originalContent = atob(JSON.parse(this.template)['content']);
-      var converter = new showdown.Converter();
-      converter.setFlavor('github');
-      return this.replaceLinksForRouting(converter.makeHtml(originalContent));
+      return (this.template === "")?(""):((function (templateInstance){
+        var _json = JSON.parse(templateInstance.template);
+        var originalContent = atob(_json['content']);
+        var converter = new showdown.Converter();
+        converter.setFlavor('github');
+        return templateInstance.replaceLinksForRouting(converter.makeHtml(originalContent));        
+      })(this))
     }
   })
 ]);
