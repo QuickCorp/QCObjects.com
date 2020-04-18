@@ -8,20 +8,26 @@ component[name="grid"]{
 <component name="grid"  >
   <component name="card" shadowed="true" data-title="QCObjects Community Edition"
   data-description="
-  <b>Features</b>
-  <ul>
-    <li>Dynamic & Recursive Routing</li>
-    <li>Components Rendering</li>
-    <li>Microservices</li>
-  </ul>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <button >FREE</button>
+  <div>
+    <b>Features</b>
+    <ul>
+      <li>Dynamic & Recursive Routing</li>
+      <li>Components Rendering</li>
+      <li>Microservices</li>
+    </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </div>
   ">
+    <img slot="logo" src="img/Q_web.png" alt="Avatar" style="width:100%">
+    <b slot="card_title">{{title}}</b>
+    <div slot="card_description">{{description}}</div>
+    <button slot="card-button" >FREE</button>
   </component>
   <component name="card" shadowed="true" data-title="QCObjects Enterprise Edition" data-description="
+  <div>
   <b>Features</b>
   <ul>
     <li>Dynamic & Recursive Routing</li>
@@ -33,8 +39,12 @@ component[name="grid"]{
   </ul>
   <br/>
   <br/>
-  <button >Ask to your Executive</button>
+  </div>
   ">
+  <img slot="logo" src="img/Q_web.png" alt="Avatar" style="width:100%">
+  <b slot="card_title">{{title}}</b>
+  <div slot="card_description">{{description}}</div>
+  <button slot="card-button" >Ask to your Executive</button>
   </component>
 </component>
 <style>
