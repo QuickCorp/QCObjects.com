@@ -30,7 +30,7 @@
 * or changing the static initial value in a config.json file
 */
 CONFIG.set('use_i18n', false);
-CONFIG.set('quickcorp_cloud_domain','https://cloud.quickcorp.org/opensourcelatam/');
+CONFIG.set('quickcorp_cloud_domain','https://cloud.quickcorp.org/');
 CONFIG.set('quickcorp_github_api','https://api.github.com/orgs/QuickCorp/');
 CONFIG.set('i18n_languages',['es']); //only list the languages that are not english
 CONFIG.set('relativeImportPath', 'js/packages/');
