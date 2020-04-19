@@ -1,6 +1,18 @@
 'use strict';
 logger.debugEnabled = true;
 Package('org.quickcorp.custom.components',[
+  Class('FooterComponent',Component,{
+    name:'footer',
+    cached:false,
+    _new_:function (o){
+      var decoded_email = _Crypt.decrypt('w5XDk8OTw5DCqcOdw5rDlsOEw5TDj8OUw5/DkcKXw4/DkQ==','email');
+      o.data = {
+        email:decoded_email,
+        emaillink:'mailto:'+decoded_email
+      };
+      _super_('Component','_new_').call(this,o);
+    }
+  }),  
   Class('CardComponent',Component,{
     name:'card',
     container:null,

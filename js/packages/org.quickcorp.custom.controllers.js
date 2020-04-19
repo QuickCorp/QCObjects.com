@@ -1,5 +1,7 @@
 'use strict';
 Import('installer');
+Import('org.quickcorp.custom.controllers.signup');
+Import('org.quickcorp.qcobjects.api.client_services');
 
 Package('org.quickcorp.custom.controllers', [
   Class('MainController', Controller, {

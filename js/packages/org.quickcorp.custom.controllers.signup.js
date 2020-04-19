@@ -1,4 +1,5 @@
 'use strict';
+logger.debugEnabled=true;
 Package('org.quickcorp.custom.controllers.signup',[
   Class('SignupFormController',Controller,{
     serviceClass: 'QuickCorpCloud',
