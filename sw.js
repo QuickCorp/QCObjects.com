@@ -23,7 +23,7 @@
  * license document, but changing it is not allowed.
 */
 "use strict";
-const version = "0.0.2";
+const version = "0.0.42";
 const appName = "qcobjects-web";
 const cacheName = `qcobjects-app-${appName}-${version}`;
 const start_url = "/?homescreen=1";
@@ -34,10 +34,8 @@ self.addEventListener('install', e => {
       return cache.addAll([`${start_url}`,
 	"/",
 	"README.md",
-	"app.js",
 	"config.json",
 	"css/components/card.css",
-	"css/components/modal.css",
 	"css/desktop/container.css",
 	"css/desktop/content.css",
 	"css/desktop/footer.css",
@@ -75,6 +73,7 @@ self.addEventListener('install', e => {
 	"img/icons/icon-512x512.png",
 	"img/icons/icon-72x72.png",
 	"img/icons/icon-96x96.png",
+	"img/loading.svg",
 	"img/logo.png",
 	"img/placeholder.svg",
 	"img/pwa-qcobjects-demo.gif",
@@ -87,15 +86,20 @@ self.addEventListener('install', e => {
 	"js/packages/installer.js",
 	"js/packages/org.quickcorp.custom.components.js",
 	"js/packages/org.quickcorp.custom.controllers.js",
+	"js/packages/org.quickcorp.custom.controllers.signup.js",
 	"js/packages/org.quickcorp.custom.effects.js",
 	"js/packages/org.quickcorp.custom.js",
 	"js/packages/org.quickcorp.custom.models.js",
 	"js/packages/org.quickcorp.custom.tools.js",
 	"js/packages/org.quickcorp.custom.views.js",
+	"js/packages/org.quickcorp.i18n_messages.es.js",
+	"js/packages/org.quickcorp.qcobjects.api.client_services.js",
 	"js/prism-okaidia.js",
 	"manifest.json",
 	"qcobjects_01.png",
 	"robots.txt",
+	"spec/support/jasmine.json",
+	"spec/testsSpec.js",
 	"templates/components/article1.tpl.html",
 	"templates/components/article2.tpl.html",
 	"templates/components/article3.tpl.html",
@@ -107,11 +111,12 @@ self.addEventListener('install', e => {
 	"templates/components/footer2.tpl.html",
 	"templates/components/grid.tpl.html",
 	"templates/components/header.tpl.html",
+	"templates/components/loading.tpl.html",
+	"templates/components/loadingfooter.tpl.html",
 	"templates/components/login.tpl.html",
 	"templates/components/login2.tpl.html",
 	"templates/components/loginform.tpl.html",
 	"templates/components/main.tpl.html",
-	"templates/components/modal.tpl.html",
 	"templates/components/nav.tpl.html",
 	"templates/components/pages/author.tpl.html",
 	"templates/components/pages/code_of_conduct.tpl.html",
@@ -123,16 +128,16 @@ self.addEventListener('install', e => {
 	"templates/components/pwa.tpl.html",
 	"templates/components/section1.tpl.html",
 	"templates/components/section2.tpl.html",
+	"templates/components/shadowed-checkbox.tpl.html",
 	"templates/components/signin.tpl.html",
+	"templates/components/signup-form.tpl.html",
 	"templates/components/signup.tpl.html",
 	"templates/components/signupbuttons.tpl.html",
+	"templates/components/signupform.tpl.html",
 	"templates/components/signuppage.tpl.html",
-	"templates/components/snippet.tpl.html",
-  "https://api.github.com/repos/QuickCorp/QCObjects/contents/README.md?ref=master",
-  "https://api.github.com/repos/QuickCorp/QCObjects/contents/AUTHOR.md?ref=master",
-  "https://api.github.com/repos/QuickCorp/QCObjects/contents/CONTRIBUTING.md?ref=master",
-  "https://api.github.com/repos/QuickCorp/QCObjects/contents/CODE_OF_CONDUCT.md?ref=master"
-])
+	"templates/components/signupsuccessful.tpl.html",
+	"templates/components/signupsuccessfulfooter.tpl.html",
+	"templates/components/snippet.tpl.html"])
           .then(() => self.skipWaiting());
     })
   );
