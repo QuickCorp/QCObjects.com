@@ -341,51 +341,8 @@ button:not(.navbtn):hover{
 /* FORM ELEMENTS FOR SIGNUP*/
 
 /* Full-width input fields */
-component[name=signup] input[type=text],
-component[name=signup] input[type=password] {
-  width: 80%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-component[name=signup] input[type=checkbox]{
-  margin-left: 20px;
-}
-
-component[name=signup] input[type=text]:focus,
-component[name=signup] input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-component[name=signup] hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-  width:100% !important;
-}
-
-/* Set a style for all buttons */
-component[name=signup] button {
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-component[name=signup] button:hover {
-  opacity:1;
-}
 
 /* Extra styles for the cancel button */
-component[name=signup] .cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
 
 /* Float cancel and signup buttons and add an equal width */
 component[name=footer] .cancelbtn,
@@ -396,11 +353,6 @@ component[name=footer] .signupbtn {
 }
 
 /* Add padding to container elements */
-component[name=signup] .container {
-  padding: 20px;
-  width: 87% !important;
-  height:100%;
-}
 
 /* Clear floats */
 component[name=signup] .clearfix::after,
