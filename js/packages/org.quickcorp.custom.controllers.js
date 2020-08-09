@@ -143,5 +143,25 @@ Package('org.quickcorp.custom.controllers', [
 			controller.dependencies.push(New(SourceCSS,{external:false,url:'css/prism-okaidia.css',done:function(){}}));
 
     }
+  }),
+  Class('DownloadButtonController',Controller,{
+    dependencies:[],
+    component:null,
+    clickHandler:function (){
+      logger.debug("Download button clicked");
+      location.href='#download';
+    },
+    done: function (){
+      logger.debug("download button controller");
+      var controller = this;
+      var component = controller.component;
+      var _componentRoot = (component.shadowed)?(component.shadowRoot):(component.body);
+      _componentRoot.subelements("button.download").map(function (element){
+        element.addEventListener("click",function (){
+          logger.debug("clicked download button");
+          controller.clickHandler.call(controller);
+        });
+      });
+    }
   })
 ]);
