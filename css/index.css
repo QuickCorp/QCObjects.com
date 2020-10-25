@@ -18,9 +18,7 @@
 @import url("./mobile/index.css") (aspect-ratio: 3/4);
 @import url("./mobile/index.css") (aspect-ratio: 2/3);
 
-@import url("./theme.css");
-@import url("./snippet.css");
-
+@import url("./modern-base.css");
 
 @viewport{
     zoom: 1.0;
@@ -281,6 +279,8 @@ nav form {
 /* HEADER */
 header{
   padding-top: 80px;
+  background-color: #ffffff;
+  background-size: contain;
 }
 header div {
 /*    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);*/
@@ -289,7 +289,7 @@ header div {
     border-radius: 7px;
 }
 header div img {
-/*  padding: 5%;*/
+  padding: 5%;
 }
 
 /* FOOTER */
@@ -298,10 +298,11 @@ footer{
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 2rem;
+  padding: 1rem;
   background: #111111;
   z-index: 10;
 }
+footer p {color:white;}
 
 /* END FOOTER */
 
@@ -322,7 +323,6 @@ button:not(.navbtn){
   transition-duration: 0.4s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   font-size:12px;
-  font-family:arial, helvetica, sans-serif;
   padding: 18px 18px 18px 18px;
   text-decoration:none;
   display:inline-block;
@@ -341,8 +341,51 @@ button:not(.navbtn):hover{
 /* FORM ELEMENTS FOR SIGNUP*/
 
 /* Full-width input fields */
+component[name=signup] input[type=text],
+component[name=signup] input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+component[name=signup] input[type=checkbox]{
+  margin-left: 20px;
+}
+
+component[name=signup] input[type=text]:focus,
+component[name=signup] input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+component[name=signup] hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  width:100% !important;
+}
+
+/* Set a style for all buttons */
+component[name=signup] button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+component[name=signup] button:hover {
+  opacity:1;
+}
 
 /* Extra styles for the cancel button */
+component[name=signup] .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
 
 /* Float cancel and signup buttons and add an equal width */
 component[name=footer] .cancelbtn,
@@ -353,6 +396,11 @@ component[name=footer] .signupbtn {
 }
 
 /* Add padding to container elements */
+component[name=signup] .container {
+  padding: 20px;
+  width: 87% !important;
+  height:100%;
+}
 
 /* Clear floats */
 component[name=signup] .clearfix::after,
@@ -381,112 +429,3 @@ img:not([data-src]) {
   transition: filter 0.5s;
 }
 /* end lazy loading images blurry */
-
-
-
-/**
-CUSTOM
-**/
-
-nav > component ul li > ul li {
-    margin-left: 3vw;
-}
-
-component[name=header] > div{
-  display: inline-grid;
-  grid-template-columns: 50% 50%;
-}
-
-component[name=header]>div>figure img#demo {
-  border-radius: 12px;
-/*  transform: skew(0deg, -16deg) translateX(-1vw) scaleX(0.75);*/
-}
-
-component[name=header]>div>img#logo {
-    border: none;
-    box-shadow: none;
-}
-
-nav > button.navbtn {
-  background: transparent !important;
-  color: #111;
-}
-
-article {
-  padding: 20px;
-  padding-bottom: 20%;
-}
-
-
-@keyframes typing {
-    from {
-        width: 0%
-    }
-    to {
-        width: 100%
-    }
-}
-
-@keyframes blink {
-    from, to {
-        border-color: transparent
-    }
-    50% {
-        border-color: white;
-    }
-}
-
-.typewriter-text {
-    display: inline-block !important;
-    overflow: hidden !important;
-    letter-spacing: 2px !important;
-    animation: typing 5s steps(30, end), blink .75s step-end infinite !important;
-    white-space: nowrap !important;
-    font-size: 12px !important;
-    font-weight: 700 !important;
-    border-right: 4px solid orange !important;
-    box-sizing: border-box !important;
-    line-height: normal !important;
-    text-align: left !important;
-    color: white !important;
-}
-
-code {
-  -webkit-user-select: text;                 /* prevent copy paste, to allow, change 'none' to 'text' */
-
-}
-
-
-:root {
-  --color-bg: #ffffff;
-}
-
-body {
-  background-color: var(--color-bg) !important;
-}
-
-[data-theme="dark"] {
-  --color-bg: #000000;
-  color:white !important;
-}
-
-
-/**
- * CSS 3 Reflection with Box Shadow
- */
-
-figure img#demo {
-        z-index:0;
-        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
-}
-figure:after {
-	position:fixed;
-	top:0;
-	bottom:0;
-	left:                   0;
-	right:                  0;
-	content:                "";
-	z-index:                0.1;
-	background:transparent;
-/*	-webkit-box-shadow: inset 0 0 100000px #111000;*/
-}

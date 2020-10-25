@@ -12,7 +12,7 @@ Package('org.quickcorp.custom.components',[
       };
       _super_('Component','_new_').call(this,o);
     }
-  }),  
+  }),
   Class('CardComponent',Component,{
     name:'card',
     container:null,
@@ -42,7 +42,7 @@ Package('org.quickcorp.custom.components',[
         `+toc+`
       </details>`;
       component.i18n_translate(); // force execution of i18n translation if available
-      this.body.subelements('ul>li>a').map(element=>{
+      this.shadowRoot.subelements('ul>li>a').map(element=>{
         element.addEventListener('click',function (event){
           global.sideNavController.close();
         })

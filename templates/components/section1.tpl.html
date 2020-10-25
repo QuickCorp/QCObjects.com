@@ -1,10 +1,13 @@
-<component name="download-button" shadowed=true controllerClass="DownloadButtonController"></component>
 <article>
   <component name="article1">
     <routing path="#author" name="pages/author"></routing>
     <routing path="#CONTRIBUTING" name="pages/contributing"></routing>
     <routing path="#CODE_OF_CONDUCT" name="pages/code_of_conduct"></routing>
     <routing path="#pricing" name="pages/pricing"></routing>
+    <routing path="^#signup$" name="signup" controllerClass="SignupFormController"></routing>
+    <routing path="^#loading$" name="loading"></routing>
+    <routing path="^#$" name="article1" ></routing>
+    <routing path="^$" name="article1" ></routing>
   </component>
 </article>
 <article>

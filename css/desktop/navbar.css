@@ -20,7 +20,3 @@ nav .topnav .login-container {
 nav form {
     width:100% !important;
 }
-
-nav > button.navbtn {
-  color: white !important;
-}
