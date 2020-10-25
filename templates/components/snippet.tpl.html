@@ -1,11 +1,17 @@
 <style>
+@import url('css/snippet.css');
 div#term{
   background-color:#454545;
   border-radius: 12px;
   width:50%;
   margin:0 auto;
   padding:1%;
+  color:white;
 }
+::slotted(p) {
+  color:white;
+}
+
 div#term p{color:white;padding:1%;}
 </style>
 
@@ -16,5 +22,7 @@ div#term p{color:white;padding:1%;}
     <div class="dot g"></div>
     <div>&nbsp;</div>
   </div>
-  {{content}}
+  <slot name="codeline">
+    <p>{{content}}</p>
+  </slot>
 </div>
