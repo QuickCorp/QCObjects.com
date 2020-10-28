@@ -169,7 +169,9 @@ Package('org.quickcorp.custom.controllers', [
     dependencies:[],
     component:null,
     done:function (){
-      var s = New(SourceJS, {url:"https://embed.typeform.com/embed.js",external:true});
+      var s = New(SourceJS, {
+        id:"typef_orm",
+        url:"https://embed.typeform.com/embed.js",external:true});
     }
   })
 ]);
