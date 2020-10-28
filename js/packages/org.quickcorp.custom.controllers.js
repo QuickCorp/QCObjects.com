@@ -163,5 +163,13 @@ Package('org.quickcorp.custom.controllers', [
         });
       });
     }
+  }),
+
+  Class('TypeformController',Controller,{
+    dependencies:[],
+    component:null,
+    done:function (){
+      var s = New(SourceJS, {url:"https://embed.typeform.com/embed.js",external:true});
+    }
   })
 ]);
