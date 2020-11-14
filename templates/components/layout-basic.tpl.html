@@ -14,10 +14,10 @@
 
 <header>
   <component name="blank" shadowed="true" controllerClass="HeaderController" effectClass="MainTransitionEffect">
-    <routing path="^#/es$" name="header-es" ></routing>
-    <routing path="^#/en$" name="header" ></routing>
-    <routing path="^#/en-US$" name="header" ></routing>
-    <routing path="^#(qcobjects|CODE_OF_CONDUCT|CONTRIBUTING|video_testimonials|author)$" name="blank" ></routing>
+    <routing path="^#/es$" name="header-es"></routing>
+    <routing path="^#/en$" name="header"></routing>
+    <routing path="^#/en-US$" name="header"></routing>
+    <routing path="^#(qcobjects|CODE_OF_CONDUCT|CONTRIBUTING|video_testimonials|author)$" name="blank"></routing>
     <routing path="^#pricing$" name="blank"></routing>
     <routing path="^#download$" name="blank"></routing>
     <routing path="^#CONTRIBUTING$" name="blank"></routing>
@@ -30,43 +30,51 @@
     <routing path="^#page1$" name="blank"></routing>
     <routing path="^#page2$" name="blank"></routing>
     <routing path="^#page3$" name="header"></routing>
-    <routing path="^#$" name="header" ></routing>
-    <routing path="^$" name="header" ></routing>
+    <routing path="^#$" name="header"></routing>
+    <routing path="^$" name="header"></routing>
   </component>
 </header>
 <aside>
   <nav>
     <span class="topnav">
       <component name="topmenu">
-          <routing path="#page1" name="blank"></routing>
-          <routing path="#page2" name="blank"></routing>
-          <routing path="#page3" name="blank"></routing>
-          <routing path="#signup" name="blank"></routing>
-          <routing path="#signin" name="blank"></routing>
-          <routing path="#" name="topmenu"></routing>
-          <routing path="" name="topmenu"></routing>
+        <routing path="#page1" name="blank"></routing>
+        <routing path="#page2" name="blank"></routing>
+        <routing path="#page3" name="blank"></routing>
+        <routing path="#signup" name="blank"></routing>
+        <routing path="#signin" name="blank"></routing>
+        <routing path="#" name="topmenu"></routing>
+        <routing path="" name="topmenu"></routing>
       </component>
     </span>
-    <button  aria-label="nav button" role="button" tabindex="-1" class="navbtn" onclick="global.sideNavController.toggle()"></button>
+    <button aria-label="nav button" role="button" tabindex="-1" class="navbtn" onclick="global.sideNavController.toggle()"></button>
     <component name="nav" controllerClass="SideNavController" componentClass="SideNavComponent"></component>
   </nav>
 </aside>
 <main role="main">
   <section>
-    <component name="contentblock" effectclass="MainTransitionEffect" >
+    <component name="language-links" template-source="none">
+      <article>
+        <a href="#/es">
+          <p>Espa&ntilde;ol</p>
+        </a>
+        <a href="#/en" <p>English</p></a>
+      </article>
+    </component>
+    <component name="contentblock" effectclass="MainTransitionEffect">
       <routing path="#pricing" name="pages/pricing"></routing>
       <routing path="#CONTRIBUTING" name="pages/contributing"></routing>
       <routing path="#contributing" name="pages/contributing"></routing>
       <routing path="#CODE_OF_CONDUCT" name="pages/code_of_conduct"></routing>
       <routing path="#code_of_conduct" name="pages/code_of_conduct"></routing>
-      <routing path="#video_testimonials" name="video_testimonials" ></routing>
-      <routing path="#author" name="pages/author" ></routing>
+      <routing path="#video_testimonials" name="video_testimonials"></routing>
+      <routing path="#author" name="pages/author"></routing>
     </component>
   </section>
 
 </main>
 <footer>
-  <component name="footer"  effectClass="MainTransitionEffect">
+  <component name="footer" effectClass="MainTransitionEffect">
     <routing path="^#signup$" name="signupbuttons"></routing>
     <routing path="^#loading$" name="loadingfooter"></routing>
     <routing path="^#signupsuccessful$" name="signupsuccessfulfooter"></routing>
