@@ -19,6 +19,6 @@
     "qcobjects": "latest"
   },
   "devDependencies": {
-    "jasmine": "^3.5.0"
+    "jasmine": "^3.6.3"
   }
 }
