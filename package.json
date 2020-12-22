@@ -15,10 +15,9 @@
   },
   "description": "Official Website of QCObjects Framework",
   "license": "LGPL-3.0-or-later",
-  "dependencies": {
-    "qcobjects": "latest"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "jasmine": "^3.6.3"
+    "jasmine": "^3.6.3",
+    "qcobjects": "latest"
   }
 }
