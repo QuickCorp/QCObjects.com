@@ -23,8 +23,8 @@
  * license document, but changing it is not allowed.
 */
 "use strict";
-const version = "0.0.75";
-const appName = "qcobjects.com";
+const version = "0.0.97";
+const appName = "qcobjects-web";
 const cacheSufix = (Math.round(Date.now()/(1000*3600))).toString(); // 1 hour
 const cacheName = `qcobjects-app-${appName}-${version}-${cacheSufix}`;
 const start_url = "/?homescreen=1";
@@ -35,9 +35,9 @@ self.addEventListener('install', e => {
       return cache.addAll([`${start_url}`,
 	"/",
 	"CHANGELOG.md",
+	"CNAME",
 	"README.md",
 	"README.rst",
-	"config.json",
 	"css/components/card.css",
 	"css/components/floating-object-effect.css",
 	"css/components/hero/hero-call-to-action.css",
@@ -94,6 +94,7 @@ self.addEventListener('install', e => {
 	"img/icons/icon-96x96.png",
 	"img/jeanmachuca.png",
 	"img/loading.svg",
+	"img/logo-qcobjects-white-powered-quickcorp.svg",
 	"img/logo-qcobjects-white.svg",
 	"img/logo.png",
 	"img/placeholder.svg",
@@ -103,15 +104,9 @@ self.addEventListener('install', e => {
 	"img/screenshots/screenshot1.webp",
 	"img/screenshots/screenshot2.png",
 	"img/screenshots/screenshot2.webp",
+	"img/sponsors/startupchile.png",
 	"index.html",
 	"index.rst",
-	"js/cl.quickcorp.components.js",
-	"js/cl.quickcorp.controller.js",
-	"js/cl.quickcorp.effects.js",
-	"js/cl.quickcorp.js",
-	"js/cl.quickcorp.model.js",
-	"js/cl.quickcorp.tools.js",
-	"js/cl.quickcorp.view.js",
 	"js/init.js",
 	"js/installer.js",
 	"js/packages/installer.js",
@@ -130,8 +125,6 @@ self.addEventListener('install', e => {
 	"qcobjects_01.png",
 	"robots.txt",
 	"sitemap.xml",
-	"spec/support/jasmine.json",
-	"spec/testsSpec.js",
 	"templates/components/academy.tpl.html",
 	"templates/components/article1.tpl.html",
 	"templates/components/article2.tpl.html",
@@ -167,6 +160,7 @@ self.addEventListener('install', e => {
 	"templates/components/pages/page2.tpl.html",
 	"templates/components/pages/page3.tpl.html",
 	"templates/components/pages/pricing.tpl.html",
+	"templates/components/presentations.tpl.html",
 	"templates/components/pwa.tpl.html",
 	"templates/components/section1.tpl.html",
 	"templates/components/section2.tpl.html",
@@ -182,6 +176,7 @@ self.addEventListener('install', e => {
 	"templates/components/signupsuccessful.tpl.html",
 	"templates/components/signupsuccessfulfooter.tpl.html",
 	"templates/components/snippet.tpl.html",
+	"templates/components/talk-form-es-cl.tpl.html",
 	"templates/components/topmenu.tpl.html",
 	"templates/components/video_testimonials.tpl.html"])
           .then(() => self.skipWaiting());
