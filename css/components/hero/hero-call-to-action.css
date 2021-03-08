@@ -7,8 +7,7 @@ div.container {
   align-items: center;
   height: 65vh;
   background-color: #f9fbfd;
-  min-height: 630px;
-  max-height: 630px;
+  max-height: 600px;
   border-radius: 30px;
 }
 
