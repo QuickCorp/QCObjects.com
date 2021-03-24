@@ -17,7 +17,7 @@
     <routing path="^#/es$" name="header-es"></routing>
     <routing path="^#/en$" name="header"></routing>
     <routing path="^#/en-US$" name="header"></routing>
-    <routing path="^#(qcobjects|CODE_OF_CONDUCT|CONTRIBUTING|video_testimonials|author)$" name="blank"></routing>
+    <routing path="^#(qcobjects|CODE_OF_CONDUCT|CONTRIBUTING|video_testimonials|author|signup|signin)$" name="blank"></routing>
     <routing path="^#pricing$" name="blank"></routing>
     <routing path="^#download$" name="blank"></routing>
     <routing path="^#CONTRIBUTING$" name="blank"></routing>
@@ -52,14 +52,6 @@
   </nav>
 </aside>
 <main role="main">
-  <section>
-    <component shadowed=true name="blank" data-youtube_id="FVI_WChlvSo">
-      <routing path="#" name="shadowed-youtube-video"></routing>
-      <routing path="" name="shadowed-youtube-video"></routing>
-      <routing path="^/$" name="shadowed-youtube-video"></routing>
-    </component>
-  </section>
-
   <section>
     <component name="language-links" template-source="none">
       <article>
